@@ -35,7 +35,8 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
 
 ✅ ## Request Body (JSON):
 
-```{
+``` post
+{
   "name": "John Doe",
   "email": "johndoe@example.com",
   "password": "yourpassword"
