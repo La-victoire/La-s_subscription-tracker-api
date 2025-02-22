@@ -1,3 +1,5 @@
+
+
 # La's Subscription Checker API
 
 **Node.js | Express | MongoDB | Upstash QStash | Railway | Archer**
@@ -24,6 +26,7 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
 
   ```bash
   Authorization: Bearer <your_jwt_token>
+  ```
 
 ## 📂 API Endpoints
 
@@ -43,6 +46,8 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
   "email": "johndoe@example.com",
   "password": "yourpassword"
 }
+```
+
 **Response (201 Created)**:
 
 ```json
@@ -277,4 +282,7 @@ List the environment variables required for the application here.
 
 - Hosted on Railway
 - Uses Upstash QStash for scheduling reminders
-```
+
+---
+
+You can now copy and paste this formatted README content into your repository. Let me know if there are any additional sections or changes you would like to make.
