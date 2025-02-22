@@ -24,26 +24,26 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
   ```bash
   Authorization: Bearer <your_jwt_token>
 
-📂 API Endpoints
+📂 ## API Endpoints
 
-1️⃣ Authentication Routes
+1️⃣ **Authentication Routes**
 
-🔹 Sign Up
+🔹 ## Sign Up
 
-POST /api/v1/auth/sign-up
+` POST /api/v1/auth/sign-up
 📌 Description: Register a new user.
 
-✅ Request Body (JSON):
+✅ ## Request Body (JSON):
 
-{
+```{
   "name": "John Doe",
   "email": "johndoe@example.com",
   "password": "yourpassword"
-}
+}```
 
-📌 Response (201 Created):
+📌 ## Response (201 Created):
 
-{
+```{
   "success": true,
   "message": "User registered successfully",
   "data": {
@@ -52,31 +52,31 @@ POST /api/v1/auth/sign-up
     "email": "johndoe@example.com",
     "token": "your_jwt_token"
   }
-}
+}```
 
-🔹 Sign In
+🔹 ## Sign In
 
-POST /api/v1/auth/sign-in
+` POST /api/v1/auth/sign-in
 📌 Description: Authenticate a user and return a JWT token.
 
-✅ Request Body (JSON):
+✅ ## Request Body (JSON):
 
-{
+```{
   "email": "johndoe@example.com",
   "password": "yourpassword"
-}
+}```
 
-📌 Response (200 OK):
+📌 ## Response (200 OK):
 
-{
+```{
   "success": true,
   "message": "User logged in successfully",
   "token": "your_jwt_token"
-}
+}```
 
-🔹 Sign Out (🚧 In Production)
+🔹 ## Sign Out (🚧 In Production)
 
-POST /api/v1/auth/sign-out
+POST ` /api/v1/auth/sign-out
 📌 Description: Logs out the user (feature in production).
 
 
@@ -84,59 +84,59 @@ POST /api/v1/auth/sign-out
 
 2️⃣ User Routes
 
-🔹 Get All Users
+🔹## Get All Users
 
-GET /api/v1/users/
+GET `/api/v1/users/
 📌 Description: Retrieves all registered users.
 
-🔹 Get a User
+🔹 ## Get a User
 
-GET /api/v1/users/:id (🔐 Protected)
+GET `/api/v1/users/:id (🔐 Protected)
 📌 Description: Retrieves a single user by ID.
 
-🔹 Create a User (🚧 In Production)
+🔹 ## Create a User (🚧 In Production)
 
-POST /api/v1/users/
+POST ` /api/v1/users/
 📌 Description: Creates a new user (feature in production).
 
-🔹 Update a User (🚧 In Production)
+🔹 ## Update a User (🚧 In Production)
 
-PUT /api/v1/users/:id
+PUT ` /api/v1/users/:id
 📌 Description: Updates user details (feature in production).
 
-🔹 Delete a User (🚧 In Production)
+🔹 ## Delete a User (🚧 In Production)
 
-DELETE /api/v1/users/:id
+DELETE `/api/v1/users/:id
 📌 Description: Deletes a user (feature in production).
 
 
 ---
 
-3️⃣ Subscription Routes
+3️⃣ ## Subscription Routes
 
-🔹 Get All Subscriptions
+🔹** Get All Subscriptions **
 
-GET /api/v1/subscriptions/
+GET.` /api/v1/subscriptions/
 📌 Description: Retrieves all subscriptions.
 
-🔹 Get a User's Subscriptions
+🔹** Get a User's Subscriptions **
 
-GET /api/v1/subscriptions/user/:id (🔐 Protected)
+GET `/api/v1/subscriptions/user/:id (🔐 Protected)
 📌 Description: Fetch subscriptions for a specific user.
 
-🔹 Get a Subscription
+🔹** Get a Subscription **
 
-GET /api/v1/subscriptions/:id (🔐 Protected)
+GET ` /api/v1/subscriptions/:id (🔐 Protected)
 📌 Description: Fetches a single subscription.
 
-🔹 Create a Subscription
+🔹 ** Create a Subscription **
 
-POST /api/v1/subscriptions/ (🔐 Protected)
+POST ` /api/v1/subscriptions/ (🔐 Protected)
 📌 Description: Adds a new subscription for the authenticated user.
 
-✅ Request Body (JSON):
+✅ ## Request Body (JSON):
 
-{
+```{
   "subscriptionName": "Netflix",
   "price": 999,
   "currency": "NGN",
@@ -144,11 +144,11 @@ POST /api/v1/subscriptions/ (🔐 Protected)
   "category": "Entertainment",
   "paymentMethod": "credit card",
   "startDate": "2025-02-22"
-}
+}```
 
-📌 Response (201 Created):
+📌 ## Response (201 Created):
 
-{
+```{
   "success": true,
   "data": {
     "id": "subscription_id",
@@ -161,41 +161,41 @@ POST /api/v1/subscriptions/ (🔐 Protected)
     "paymentMethod": "credit card",
     "startDate": "2025-02-22"
   }
-}
+}```
 
-🔹 Update a Subscription (🚧 In Production)
+🔹 ** Update a Subscription (🚧 In Production)**
 
-PUT /api/v1/subscriptions/:id
+PUT `/api/v1/subscriptions/:id
 📌 Description: Updates a subscription’s details (feature in production).
 
-🔹 Cancel a Subscription (🚧 In Production)
+🔹 ** Cancel a Subscription (🚧 In Production)**
 
-PUT /api/v1/subscriptions/:id/cancel
+PUT ` /api/v1/subscriptions/:id/cancel
 📌 Description: Cancels a subscription (feature in production).
 
-🔹 Delete a Subscription (🚧 In Production)
+🔹 ** Delete a Subscription (🚧 In Production)**
 
-DELETE /api/v1/subscriptions/:id
+DELETE ` /api/v1/subscriptions/:id
 📌 Description: Deletes a subscription (feature in production).
 
-🔹 Get Upcoming Renewals
+🔹 ** Get Upcoming Renewals **
 
-GET /api/v1/subscriptions/upcoming-renewals
+GET ` /api/v1/subscriptions/upcoming-renewals
 📌 Description: Fetches upcoming renewals.
 
 
 ---
 
-4️⃣ Webhook Routes
+4️⃣ ## Webhook Routes
 
-🔹 Subscription Reminder Workflow
+🔹 **Subscription Reminder Workflow**
 
 POST /api/v1/workflows/subscription/reminder
 📌 Description: Sends reminders for upcoming subscriptions using Upstash QStash.
 
-✅ Request Body (JSON):
+✅ ## Request Body (JSON):
 
-{
+```{
   "subscriptionId": "subscription_id"
 }
 
@@ -204,25 +204,25 @@ POST /api/v1/workflows/subscription/reminder
 {
   "success": true,
   "message": "Reminder workflow triggered"
-}
+}```
 
 
 ---
 
-📊 Database Schema (Mongoose)
+📊 ## Database Schema (Mongoose)
 
-🔹 User Model
+🔹** User Model **
 
-{
+```{
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   createdAt: { type: Date, default: Date.now }
-}
+}```
 
-🔹 Subscription Model
+🔹** Subscription Model **
 
-{
+```{
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   subscriptionName: { type: String, required: true },
   price: { type: Number, required: true, max: 1000 },
@@ -231,7 +231,7 @@ POST /api/v1/workflows/subscription/reminder
   category: { type: String, required: true },
   paymentMethod: { type: String, required: true },
   startDate: { type: Date, required: true }
-}
+}```
 
 
 ---
