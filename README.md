@@ -24,7 +24,7 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
   ```bash
   Authorization: Bearer <your_jwt_token>
 
-📂 ## API Endpoints
+## 📂 API Endpoints
 
 1️⃣ **Authentication Routes**
 
@@ -39,7 +39,7 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
   "name": "John Doe",
   "email": "johndoe@example.com",
   "password": "yourpassword"
-}```
+}
 
 📌 ## Response (201 Created):
 
@@ -52,7 +52,7 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
     "email": "johndoe@example.com",
     "token": "your_jwt_token"
   }
-}```
+}
 
 🔹 ## Sign In
 
@@ -64,7 +64,7 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
 ```{
   "email": "johndoe@example.com",
   "password": "yourpassword"
-}```
+}
 
 📌 ## Response (200 OK):
 
@@ -72,7 +72,7 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
   "success": true,
   "message": "User logged in successfully",
   "token": "your_jwt_token"
-}```
+}
 
 🔹 ## Sign Out (🚧 In Production)
 
