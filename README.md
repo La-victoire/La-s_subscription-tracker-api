@@ -263,18 +263,12 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
   "subscriptionName": { "type": "String", "required": true },
   "price": { "type": "Number", "required": true, "max": 1000 },
   "currency": { "type": "String", "enum": ["NGN", "USD", "GBP"], "required": true },
-  "frequency": { "type": "String", "required": true },
+  "frequency": { "type": "String","enum":["daily","weekly","monthly","yearly"] "required": true },
   "category": { "type": "String", "required": true },
   "paymentMethod": { "type": "String", "required": true },
   "startDate": { "type": "Date", "required": true }
 }
 ```
-
----
-
-## 🔧 Environment Variables
-
-List the environment variables required for the application here.
 
 ---
 
