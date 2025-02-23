@@ -278,5 +278,3 @@ La’s Subscription Checker is an API designed to help users **track, manage, an
 - Uses Upstash QStash for scheduling reminders
 
 ---
-
-You can now copy and paste this formatted README content into your repository. Let me know if there are any additional sections or changes you would like to make.
