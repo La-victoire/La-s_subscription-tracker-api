@@ -2,7 +2,7 @@
 
 # La's Subscription Checker API
 
-**Node.js | Express | MongoDB | Upstash QStash | Railway | Archer**
+**Node.js | Express | MongoDB | Upstash QStash | Railway | Arcjet**
 
 ## 📌 Overview
 La’s Subscription Checker is an API designed to help users **track, manage, and get reminders** for their subscriptions. It provides authentication, subscription CRUD operations, and upcoming renewal tracking.
